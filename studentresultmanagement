@@ -696,13 +696,13 @@ int main() {
 
     // Create student objects
     vector<Exam2> exams1 = {is, de, ae, am};
-    Student7 st1("John Doe", 101, exams1);
+    Student7 st1("MAHITA BOYINA", 101, exams1);
 
     vector<Exam2> exams2 = {de, ae};
-    Student7 st2("Jane Doe", 102, exams2);
+    Student7 st2("PRIYA PAHWA", 102, exams2);
 
     vector<Exam2> exams3 = {is, de, am};
-    Student7 st3("", 103, exams3);
+    Student7 st3("ANAMIKA KUMARI", 103, exams3);
 
     // Create course object
     vector<Student7> students = {st1, st2, st3};
