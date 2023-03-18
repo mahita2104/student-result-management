@@ -523,11 +523,11 @@ public:
 
 
 int main() {
-    cout<<"--------------------------STUDENT RESULT MANAGEMENT SYSTEM-------------------------";
+    cout<<"--------------------------STUDENT RESULT MANAGEMENT SYSTEM-------------------------"<<endl;
     char choice;
     choice='y';
     while(choice=='Y' || choice=='y'){
-        cout<<"MAIN MENU";
+        cout<<"MAIN MENU"<<endl;
         cout<<"1.STUDENT RECORDS"<<endl;
         cout<<"2.COURSE RECORDS"<<endl;
         cout<<"3.EXAM RECORDS/EXAM'S SCORES"<<endl;
@@ -537,14 +537,14 @@ int main() {
         cout<<"7.DISPLAY INDIVIDUAL STUDENT RESULT"<<endl;
         cout<<"8.DISPLAY COURSE WISE RESULT"<<endl;
         cout<<"9.DISPLAY OVERALL RESULT"<<endl;
-        cout<<"10.EXIT";
+        cout<<"10.EXIT"<<endl;
         int m;
         cout<<"ENTER YOUR CHOICE:";
         cin>>m;
         if(m==1){
             int k;
             StudentResultManagementSystem srm;
-            cout<<"SUB-MENU";
+            cout<<"SUB-MENU"<<endl;
             cout<<"1.DISPLAY RECORDS"<<endl;
             cout<<"2.ADD RECORDS "<<endl;
             cout<<"3.UPDATE RECORDS"<<endl;
@@ -568,7 +568,7 @@ int main() {
             }
         if(m==2){ 
             int z;
-            cout<<"SUB-MENU";
+            cout<<"SUB-MENU"<<endl;
             cout<<"1.DISPLAY RECORDS"<<endl;
             cout<<"2.ADD RECORDS "<<endl;
             cout<<"3.UPDATE RECORDS"<<endl;
