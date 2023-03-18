@@ -21,16 +21,16 @@ The link to our presentation - https://www.canva.com/design/DAFdb-hqiiY/STz_1HUF
 
 The link to our video presentation - 
 # Challenges we ran into
-Since we were beginners, we had to get a grip over our coding language in a short span of time.
+Since we were beginners, we had to get a grip over our oops concept in a short span of time.We had to learn oops concept very quickly.
 We did have some issues with understanding the test cases but in the end we were able to crack them after few trials.All in all it was a great learning experience.
 # Accomplishments we are proud of
 
-"Every worthwhile accomplishment, big or little, has its stages of drudgery and triumph : a beginning, a sturggle, and a victory." - Mahatma Gandhi
+"Every worthwhile accomplishment, big or little, has its stages of drudgery and triumph : a beginning, a struggle, and a victory." - Mahatma Gandhi
 
 We were able to successfully complete our project. We could pass all the test cases which was really nice! We feel more confident after participating in this hackathon. 
 # What we learned
 We became efficient in C++ programming language.It has boosted up our confidence and has motivated us to participate in more hackathons.
-We have discovered various new features in canva which will hepl us with our future projects.It has given great exposure to coding competitons.
+We have discovered various new features in canva which will help us with our future projects.It has given great exposure to coding competitons.
 It has increased our competitive spirit. Looking at other teams projects has inspired us alot.
 # What's next for our project
 We want our student result management project to become a common platform for various educational institutions. We want to add new features as well as AI tools.
