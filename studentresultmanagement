@@ -553,13 +553,17 @@ int main() {
             cin>>k;
             if(k==2){
             // Create some initial student
-            srm.createStudent("mahita","mahita@gmail.com");}//check this again user input
+            srm.createStudent("mahita","mahita@gmail.com");
+            srm.createStudent("anamika","anamika@gmail.com");
+            srm.createStudent("priya","priya@gmail.com");
+            }
             if(k==1){
             // Display all students
             srm.displayStudents();}
             if(k==3){
             // Update a student's information
-            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}//check this again user input
+            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}
+
             if(k==4){
             // Delete a student
             srm.deleteStudent(102);//check this again user input
