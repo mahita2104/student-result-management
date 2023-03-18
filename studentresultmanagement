@@ -544,12 +544,12 @@ int main() {
         if(m==1){
             int k;
             StudentResultManagementSystem srm;
-            cout<<"SUB-MENU";
-            cout<<"1.DISPLAY RECORDS";
-            cout<<"2.ADD RECORDS ";
-            cout<<"3.UPDATE RECORDS";
-            cout<<"4.DELETE RECORDS";
-            cout<<"CHOOSE ONE FROM ABOVE";
+            cout<<"SUB-MENU"<<endl;
+            cout<<"1.DISPLAY RECORDS"<<endl;
+            cout<<"2.ADD RECORDS "<<endl;
+            cout<<"3.UPDATE RECORDS"<<endl;
+            cout<<"4.DELETE RECORDS"<<endl;
+            cout<<"CHOOSE ONE FROM ABOVE"<<endl;
             cin>>k;
             if(k==2){
             // Create some initial student
@@ -580,12 +580,12 @@ int main() {
             }
         if(m==2){ 
             int z;
-            cout<<"SUB-MENU";
-            cout<<"1.DISPLAY RECORDS";
-            cout<<"2.ADD RECORDS ";
-            cout<<"3.UPDATE RECORDS";
-            cout<<"4.DELETE RECORDS";
-            cout<<"CHOOSE ONE FROM ABOVE";
+            cout<<"SUB-MENU"<<endl;
+            cout<<"1.DISPLAY RECORDS"<<endl;
+            cout<<"2.ADD RECORDS "<<endl;
+            cout<<"3.UPDATE RECORDS"<<endl;
+            cout<<"4.DELETE RECORDS"<<endl;
+            cout<<"CHOOSE ONE FROM ABOVE"<<endl;
             cin>>z;
 
 
@@ -602,6 +602,14 @@ int main() {
             student->addCourse(course3);}
             
             if(z==1){
+            // Create some courses
+            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+           // Add the courses to the student's list of courses
+            student->addCourse(course1);
+            student->addCourse(course2);
+            student->addCourse(course3);}
             Course* course1 = new Course("Programming 101", "Jane Smith", 3);
             Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
             Course* course3 = new Course("Algorithms", "Alice Lee", 4);
@@ -610,6 +618,14 @@ int main() {
            student->displayCourses();}
 
            if(z==3){
+           // Create some courses
+            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+           // Add the courses to the student's list of courses
+            student->addCourse(course1);
+            student->addCourse(course2);
+            student->addCourse(course3);}
            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
@@ -617,6 +633,14 @@ int main() {
            Course* course4 = new Course("Advanced Programming", "Jane Smith", 4);
            student->updateCourse(0, course4);}
            if(z==4){
+           // Create some courses
+            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+           // Add the courses to the student's list of courses
+            student->addCourse(course1);
+            student->addCourse(course2);
+            student->addCourse(course3);}
             Course* course1 = new Course("Programming 101", "Jane Smith", 3);
             Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
             Course* course3 = new Course("Algorithms", "Alice Lee", 4);
@@ -628,12 +652,12 @@ int main() {
         }
     if(m==3){
         int p;
-        cout<<"SUB-MENU";
-        cout<<"1.DISPLAY RECORDS";
-        cout<<"2.ADD RECORDS ";
-        cout<<"3.UPDATE RECORDS";
-        cout<<"4.DELETE RECORDS";
-        cout<<"CHOOSE ONE FROM ABOVE";
+        cout<<"SUB-MENU"<<endl;
+        cout<<"1.DISPLAY RECORDS"<<endl;
+        cout<<"2.ADD RECORDS "<<endl;
+        cout<<"3.UPDATE RECORDS"<<endl;
+        cout<<"4.DELETE RECORDS"<<endl;
+        cout<<"CHOOSE ONE FROM ABOVE"<<endl;
         cin>>p;
 
        Student2 student2("John", 1);
