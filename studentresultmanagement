@@ -556,7 +556,7 @@ int main() {
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
             srm.createStudent("priya","priya@gmail.com");
-            }//check this again user input
+            }
             if(k==1){
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
@@ -568,7 +568,7 @@ int main() {
             srm.createStudent("anamika","anamika@gmail.com");
             srm.createStudent("priya","priya@gmail.com");
             // Update a student's information
-            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}//check this again user input
+            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}
             if(k==4){
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
@@ -640,7 +640,7 @@ int main() {
            // Add the courses to the student's list of courses
             student->addCourse(course1);
             student->addCourse(course2);
-            student->addCourse(course3);}
+            student->addCourse(course3);
             Course* course1 = new Course("Programming 101", "Jane Smith", 3);
             Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
             Course* course3 = new Course("Algorithms", "Alice Lee", 4);
