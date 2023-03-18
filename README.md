@@ -30,7 +30,10 @@ We did have some issues with understanding the test cases but in the end we were
 We were able to successfully complete our project. We could pass all the test cases which was really nice! We feel more confident after participating in this hackathon. 
 # What we learned
 We became efficient in C++ programming language.It has boosted up our confidence and has motivated us to participate in more hackathons.
-We have discovered various new features in canva which will help us with our future projects.It has given great exposure to coding competitons.
+We have discovered various new features in canva which will help us with our future projects.
+We learnt a lot about functions of library vectors , map and string.
+We got a very good grasp on oops concept.
+It has given great exposure to coding competitons.
 It has increased our competitive spirit. Looking at other teams projects has inspired us alot.
 # What's next for our project
 We want our student result management project to become a common platform for various educational institutions. We want to add new features as well as AI tools.
