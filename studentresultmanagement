@@ -592,9 +592,9 @@ int main() {
             // Create a student
             Student* student = new Student("CSE");
             // Create some courses
-            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
-            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
-            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+            Course* course1 = new Course("Programming 101", "MITA", 3);
+            Course* course2 = new Course("Data Structures", "MEGHA", 4);
+            Course* course3 = new Course("Algorithms", "AJAY", 4);
             if(z==2){
          
            // Add the courses to the student's list of courses
@@ -608,9 +608,9 @@ int main() {
             student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);}
-            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
-            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
-            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+            Course* course1 = new Course("Programming 101", "MITA", 3);
+            Course* course2 = new Course("Data Structures", "MEGHA", 4);
+            Course* course3 = new Course("Algorithms", "AJAY", 4);
     
            // Display the student's courses
            student->displayCourses();}
@@ -621,11 +621,11 @@ int main() {
             student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);}
-           Course* course1 = new Course("Programming 101", "Jane Smith", 3);
-           Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
-           Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+           Course* course1 = new Course("Programming 101", "MITA", 3);
+           Course* course2 = new Course("Data Structures", "MEGHA", 4);
+           Course* course3 = new Course("Algorithms", "AJAY", 4);
            // Update a course
-           Course* course4 = new Course("Advanced Programming", "Jane Smith", 4);
+           Course* course4 = new Course("Advanced Programming", "MITA", 4);
            student->updateCourse(0, course4);}
            if(z==4){
            
@@ -633,9 +633,9 @@ int main() {
             student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);
-            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
-            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
-            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+            Course* course1 = new Course("Programming 101", "MITA", 3);
+            Course* course2 = new Course("Data Structures", "MEGHA", 4);
+            Course* course3 = new Course("Algorithms", "AJAY", 4);
            // Delete a course
            student->deleteCourse(2);
     
