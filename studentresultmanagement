@@ -585,7 +585,7 @@ int main() {
             Student* student = new Student("CSE");
             if(z==2){
             // Create some courses
-            Course* course1 = new Course("Programming 101", "MEFGHA ARORA", 3);
+            Course* course1 = new Course("Programming 101", "MEGHA ARORA", 3);
             Course* course2 = new Course("Data Structures", "SONALI", 4);
             Course* course3 = new Course("Algorithms", "MITA", 4);
          
@@ -620,7 +620,7 @@ int main() {
         cout<<"CHOOSE ONE FROM ABOVE"<<endl;
         cin>>p;
 
-        Student2 student2("John", 1);
+        Student2 student2("PRIYA", 102);
         if(p==2){
         //exam records
        ExamRecord examRecord1("analog electronics",70, 80, 90);
