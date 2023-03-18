@@ -583,12 +583,12 @@ int main() {
 
             // Create a student
             Student* student = new Student("CSE");
-    
+            if(z==2){
             // Create some courses
             Course* course1 = new Course("Programming 101", "Jane Smith", 3);
             Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
             Course* course3 = new Course("Algorithms", "Alice Lee", 4);
-            if(z==2){
+         
            // Add the courses to the student's list of courses
             student->addCourse(course1);
             student->addCourse(course2);
@@ -621,10 +621,11 @@ int main() {
         cin>>p;
 
         Student2 student2("John", 1);
+        if(p==2){
         //exam records
        ExamRecord examRecord1("analog electronics",70, 80, 90);
        ExamRecord examRecord2("intelligent systems",80, 85, 95);
-       if(p==2){
+
        student2.addExamRecord(examRecord1);
        student2.addExamRecord(examRecord2);}
        if(p==1){
@@ -669,39 +670,39 @@ int main() {
         cout << "Enter enrollment number: ";
         cin >> enrollmentNumber;
         Student3 student3;
-        student3.setDetails("John", enrollmentNumber);
+        student3.setDetails("ANAMIKA", enrollmentNumber);
          student3.calculate();
          }
     if(m==7){
         //display individual student's result
         Student4 student4("John", 1);
-        student4.addExam(Exam("Maths", 75, 100));
-        student4.addExam(Exam("Science", 80, 100));
-        student4.addExam(Exam("English", 90, 100));
+        student4.addExam(Exam("ANALOG ELECTRONICS", 75, 100));
+        student4.addExam(Exam("PROGRAMMING IN C", 80, 100));
+        student4.addExam(Exam("COMMUNICATION SKILLS", 90, 100));
         student4.displayResult();
     
         Student4 student5("Jane", 2);
-        student5.addExam(Exam("Maths", 85, 100));
-        student5.addExam(Exam("Science", 70, 100));
-        student5.addExam(Exam("English", 80, 100));
+        student5.addExam(Exam("ANALOG ELECTRONICS", 85, 100));
+        student5.addExam(Exam("PROGRAMMING IN C", 70, 100));
+        student5.addExam(Exam("COMMUNICATION SKILLS", 80, 100));
         student5.displayResult();}
     if(m==8){
         //course wise result
        // Create exam objects
-       Exam2 math("Mathematics", 90);
-    Exam2 science("Science", 85);
-    Exam2 english("English", 92);
-    Exam2 socialScience("Social Science", 88);
+       Exam2 is("INTELLIIGENT SYSTEMS", 90);
+    Exam2 de("DIGITAL ELECTRONICS", 85);
+    Exam2 ae("ANALOG ELECTRONICS", 92);
+    Exam2 am("APPLIED MATHEMATICS", 88);
 
     // Create student objects
-    vector<Exam2> exams1 = {math, science, english, socialScience};
+    vector<Exam2> exams1 = {is, de, ae, am};
     Student7 st1("John Doe", 101, exams1);
 
-    vector<Exam2> exams2 = {science, english};
+    vector<Exam2> exams2 = {de, ae};
     Student7 st2("Jane Doe", 102, exams2);
 
-    vector<Exam2> exams3 = {math, english, socialScience};
-    Student7 st3("Jim Smith", 103, exams3);
+    vector<Exam2> exams3 = {is, de, am};
+    Student7 st3("", 103, exams3);
 
     // Create course object
     vector<Student7> students = {st1, st2, st3};
@@ -715,9 +716,9 @@ int main() {
     Exam3 exam;
 
     // Add some students to the exam
-    exam.addStudent({"John Doe", 1, 80});
-    exam.addStudent({"Jane Doe", 2, 90});
-    exam.addStudent({"Bob Smith", 3, 70});
+    exam.addStudent({"ANAMIKA", 103, 80});
+    exam.addStudent({"MAHITA", 100, 90});
+    exam.addStudent({"PRIYA", 102, 70});
 
     // Display the overall result
     exam.displayResult();}
