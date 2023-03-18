@@ -585,9 +585,9 @@ int main() {
             Student* student = new Student("CSE");
             if(z==2){
             // Create some courses
-            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
-            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
-            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
+            Course* course1 = new Course("Programming 101", "MEFGHA ARORA", 3);
+            Course* course2 = new Course("Data Structures", "SONALI", 4);
+            Course* course3 = new Course("Algorithms", "MITA", 4);
          
            // Add the courses to the student's list of courses
             student->addCourse(course1);
@@ -601,7 +601,7 @@ int main() {
 
            if(z==3){
            // Update a course
-           Course* course4 = new Course("Advanced Programming", "Jane Smith", 4);
+           Course* course4 = new Course("Advanced Programming", "ISHITA TANDON", 4);
            student->updateCourse(0, course4);}
            if(z==4){
            // Delete a course
@@ -675,13 +675,13 @@ int main() {
          }
     if(m==7){
         //display individual student's result
-        Student4 student4("John", 1);
+        Student4 student4("ANAMIKA", 1);
         student4.addExam(Exam("ANALOG ELECTRONICS", 75, 100));
         student4.addExam(Exam("PROGRAMMING IN C", 80, 100));
         student4.addExam(Exam("COMMUNICATION SKILLS", 90, 100));
         student4.displayResult();
     
-        Student4 student5("Jane", 2);
+        Student4 student5("MAHITA", 2);
         student5.addExam(Exam("ANALOG ELECTRONICS", 85, 100));
         student5.addExam(Exam("PROGRAMMING IN C", 70, 100));
         student5.addExam(Exam("COMMUNICATION SKILLS", 80, 100));
