@@ -544,27 +544,35 @@ int main() {
         if(m==1){
             int k;
             StudentResultManagementSystem srm;
-            cout<<"SUB-MENU"<<endl;
-            cout<<"1.DISPLAY RECORDS"<<endl;
-            cout<<"2.ADD RECORDS "<<endl;
-            cout<<"3.UPDATE RECORDS"<<endl;
-            cout<<"4.DELETE RECORDS"<<endl;
-            cout<<"CHOOSE ONE FROM ABOVE"<<endl;
+            cout<<"SUB-MENU";
+            cout<<"1.DISPLAY RECORDS";
+            cout<<"2.ADD RECORDS ";
+            cout<<"3.UPDATE RECORDS";
+            cout<<"4.DELETE RECORDS";
+            cout<<"CHOOSE ONE FROM ABOVE";
             cin>>k;
             if(k==2){
             // Create some initial student
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
             srm.createStudent("priya","priya@gmail.com");
-            }
+            }//check this again user input
             if(k==1){
+            srm.createStudent("mahita","mahita@gmail.com");
+            srm.createStudent("anamika","anamika@gmail.com");
+            srm.createStudent("priya","priya@gmail.com");
             // Display all students
             srm.displayStudents();}
             if(k==3){
+            srm.createStudent("mahita","mahita@gmail.com");
+            srm.createStudent("anamika","anamika@gmail.com");
+            srm.createStudent("priya","priya@gmail.com");
             // Update a student's information
-            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}
-
+            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}//check this again user input
             if(k==4){
+            srm.createStudent("mahita","mahita@gmail.com");
+            srm.createStudent("anamika","anamika@gmail.com");
+            srm.createStudent("priya","priya@gmail.com");
             // Delete a student
             srm.deleteStudent(102);//check this again user input
             // Display all students again
@@ -572,12 +580,12 @@ int main() {
             }
         if(m==2){ 
             int z;
-            cout<<"SUB-MENU"<<endl;
-            cout<<"1.DISPLAY RECORDS"<<endl;
-            cout<<"2.ADD RECORDS "<<endl;
-            cout<<"3.UPDATE RECORDS"<<endl;
-            cout<<"4.DELETE RECORDS"<<endl;
-            cout<<"CHOOSE ONE FROM ABOVE"<<endl;
+            cout<<"SUB-MENU";
+            cout<<"1.DISPLAY RECORDS";
+            cout<<"2.ADD RECORDS ";
+            cout<<"3.UPDATE RECORDS";
+            cout<<"4.DELETE RECORDS";
+            cout<<"CHOOSE ONE FROM ABOVE";
             cin>>z;
 
 
@@ -585,25 +593,33 @@ int main() {
             Student* student = new Student("CSE");
             if(z==2){
             // Create some courses
-            Course* course1 = new Course("Programming 101", "MEGHA ARORA", 3);
-            Course* course2 = new Course("Data Structures", "SONALI", 4);
-            Course* course3 = new Course("Algorithms", "MITA", 4);
-         
+            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
            // Add the courses to the student's list of courses
             student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);}
             
             if(z==1){
+            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
     
            // Display the student's courses
            student->displayCourses();}
 
            if(z==3){
+           Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+           Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+           Course* course3 = new Course("Algorithms", "Alice Lee", 4);
            // Update a course
-           Course* course4 = new Course("Advanced Programming", "ISHITA TANDON", 4);
+           Course* course4 = new Course("Advanced Programming", "Jane Smith", 4);
            student->updateCourse(0, course4);}
            if(z==4){
+            Course* course1 = new Course("Programming 101", "Jane Smith", 3);
+            Course* course2 = new Course("Data Structures", "Bob Johnson", 4);
+            Course* course3 = new Course("Algorithms", "Alice Lee", 4);
            // Delete a course
            student->deleteCourse(2);
     
@@ -612,28 +628,33 @@ int main() {
         }
     if(m==3){
         int p;
-        cout<<"SUB-MENU"<<endl;
-        cout<<"1.DISPLAY RECORDS"<<endl;
-        cout<<"2.ADD RECORDS "<<endl;
-        cout<<"3.UPDATE RECORDS"<<endl;
-        cout<<"4.DELETE RECORDS"<<endl;
-        cout<<"CHOOSE ONE FROM ABOVE"<<endl;
+        cout<<"SUB-MENU";
+        cout<<"1.DISPLAY RECORDS";
+        cout<<"2.ADD RECORDS ";
+        cout<<"3.UPDATE RECORDS";
+        cout<<"4.DELETE RECORDS";
+        cout<<"CHOOSE ONE FROM ABOVE";
         cin>>p;
 
-        Student2 student2("PRIYA", 102);
-        if(p==2){
+       Student2 student2("John", 1);
         //exam records
        ExamRecord examRecord1("analog electronics",70, 80, 90);
        ExamRecord examRecord2("intelligent systems",80, 85, 95);
-
+       if(p==2){
        student2.addExamRecord(examRecord1);
        student2.addExamRecord(examRecord2);}
        if(p==1){
+        student2.addExamRecord(examRecord1);
+       student2.addExamRecord(examRecord2);
         student2.displayExamRecords();}
        if(p==3){
+        student2.addExamRecord(examRecord1);
+       student2.addExamRecord(examRecord2);
         ExamRecord examRecord3("analog electronincs",90, 95, 100);
         student2.updateExamRecord(2, examRecord3);}
        if(p==4){
+        student2.addExamRecord(examRecord1);
+       student2.addExamRecord(examRecord2);
         student2.deleteExamRecord(1);
     
         student2.displayExamRecords();}
