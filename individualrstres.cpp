@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+//done
+class Exam {
+    private:
+        string examName;
+        int marksObtained;
+        int totalMarks;
+    
+    public:
+        Exam() {}
+        
+        Exam(string examName, int marksObtained, int totalMarks) {
+            this->examName = examName;
+            this->marksObtained = marksObtained;
+            this->totalMarks = totalMarks;
+        }
+        
+        string getExamName() {
+            return examName;
+        }
+        
+        int getMarksObtained() {
+            return marksObtained;
+        }
+        
+        int getTotalMarks() {
+            return totalMarks;
+        }
+        
+        float getPercentage() {
+            return ((float)marksObtained/totalMarks)*100;
+        }
+};
+
+class Student4 {
+    private:
+        string name;
+        int rollNumber;
+        vector<Exam> exams;
+    
+    public:
+        Student4() {}
+        
+        Student4(string name, int rollNumber) {
+            this->name = name;
+            this->rollNumber = rollNumber;
+        }
+        
+        void addExam(Exam exam) {
+            exams.push_back(exam);
+        }
+        
+        void displayResult() {
+            cout << "Student Name: " << name << endl;
+            cout << "Roll Number: " << rollNumber << endl;
+            cout << "Exams: " << endl;
+            for (int i = 0; i < exams.size(); i++) {
+                cout << exams[i].getExamName() << ": " << exams[i].getMarksObtained() << "/" << exams[i].getTotalMarks() << " (" << exams[i].getPercentage() << "%)" << endl;
+            }
+        }
+};
+
+int main() {
+    Student4 student4("John", 1);
+    student4.addExam(Exam("Maths", 75, 100));
+    student4.addExam(Exam("Science", 80, 100));
+    student4.addExam(Exam("English", 90, 100));
+    student4.displayResult();
+    
+    Student4 student5("Jane", 2);
+    student5.addExam(Exam("Maths", 85, 100));
+    student5.addExam(Exam("Science", 70, 100));
+    student5.addExam(Exam("English", 80, 100));
+    student5.displayResult();
+    
+    return 0;
+}

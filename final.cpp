@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+#include<iostream>
+#include<vector>
 #include<string>
 #include<map>
 using namespace std;
@@ -21,28 +21,29 @@ public:
 
     // Function to create a new student
     void createStudent(string name, string email) {
-        Student1 u;
-        u.enrollment_no = nextStudentId;
-        u.student_name= name;
-        u.email_id = email;
-        students1.push_back(u);
+        Student1 s;
+        s.enrollment_no = nextStudentId;
+        s.student_name= name;
+        s.email_id = email;
+        students.push_back(s);
         nextStudentId++;
+        cout << "Student created successfully with Enrollment Number: " << s.enrollment_no << endl;
     }
 
     // Function to display all students
     void displayStudents() {
         cout << "ID\tName\tEmail" << endl;
-        for (int i = 0; i < students1.size(); i++) {
-            cout << students1[i].enrollment_no << "\t" << students1[i].student_name << "\t" << students1[i].email_id << endl;
+        for (int i = 0; i < students.size(); i++) {
+            cout << students[i].enrollment_no << "\t" << students[i].student_name << "\t" << students[i].email_id << endl;
         }
     }
 
     // Function to update a student's information
     void updateStudent(int id, string name, string email) {
-        for (int i = 0; i < students1.size(); i++) {
-            if (students1[i].enrollment_no == id) {
-                students1[i].student_name = name;
-                students1[i].email_id = email;
+        for (int i = 0; i < students.size(); i++) {
+            if (students[i].enrollment_no == id) {
+                students[i].student_name = name;
+                students[i].email_id = email;
                 cout << "Student information updated successfully" << endl;
                 return;
             }
@@ -52,9 +53,9 @@ public:
 
     // Function to delete a student
     void deleteStudent(int id) {
-        for (int i = 0; i < students1.size(); i++) {
-            if (students1[i].enrollment_no == id) {
-                students1.erase(students1.begin() + i);
+        for (int i = 0; i < students.size(); i++) {
+            if (students[i].enrollment_no == id) {
+                students.erase(students.begin() + i);
                 cout << "Student deleted successfully" << endl;
                 return;
             }
@@ -63,7 +64,7 @@ public:
     }
 
 private:
-    vector<Student1> students1;
+    vector<Student1> students;
     int nextStudentId;
 };
 class Course {
@@ -245,7 +246,7 @@ class Student3 {
       enrollmentNumber = e;
       cout << "Enter marks for 5 subjects: " << endl;
       for (int i = 0; i < 5; i++) {
-        cin >> marks[i];
+        cin>> marks[i];
       }
     }
   
@@ -523,7 +524,6 @@ public:
 
 int main() {
     cout<<"--------------------------STUDENT RESULT MANAGEMENT SYSTEM-------------------------"<<endl;
-    //cout<<"--------------------------------IGDTUW,KASHMERE GATE-------------------------------"<<endl;
     char choice;
     choice='y';
     while(choice=='Y' || choice=='y'){
@@ -556,7 +556,7 @@ int main() {
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
             srm.createStudent("priya","priya@gmail.com");
-            }//check this again user input
+            }
             if(k==1){
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
@@ -568,7 +568,7 @@ int main() {
             srm.createStudent("anamika","anamika@gmail.com");
             srm.createStudent("priya","priya@gmail.com");
             // Update a student's information
-            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}//check this again user input
+            srm.updateStudent(101, "DIVYA VERMA", "divya@gmail.com");}
             if(k==4){
             srm.createStudent("mahita","mahita@gmail.com");
             srm.createStudent("anamika","anamika@gmail.com");
@@ -591,19 +591,20 @@ int main() {
 
             // Create a student
             Student* student = new Student("CSE");
+            // Create some courses
             Course* course1 = new Course("Programming 101", "MITA", 3);
             Course* course2 = new Course("Data Structures", "MEGHA", 4);
             Course* course3 = new Course("Algorithms", "AJAY", 4);
             if(z==2){
-            // Create some courses
-            
+         
            // Add the courses to the student's list of courses
             student->addCourse(course1);
             student->addCourse(course2);
-            student->addCourse(course3);
-            }
+            student->addCourse(course3);}
             
             if(z==1){
+            
+           // Add the courses to the student's list of courses
             student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);
@@ -612,12 +613,12 @@ int main() {
             Course* course3 = new Course("Algorithms", "AJAY", 4);
     
            // Display the student's courses
-           student->displayCourses();
-           }
+           student->displayCourses();}
 
            if(z==3){
-             
-           student->addCourse(course1);
+          
+           // Add the courses to the student's list of courses
+            student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);
            Course* course1 = new Course("Programming 101", "MITA", 3);
@@ -625,9 +626,10 @@ int main() {
            Course* course3 = new Course("Algorithms", "AJAY", 4);
            // Update a course
            Course* course4 = new Course("Advanced Programming", "MITA", 4);
-           student->updateCourse(0, course4);
-           }
+           student->updateCourse(0, course4);}
            if(z==4){
+           
+           // Add the courses to the student's list of courses
             student->addCourse(course1);
             student->addCourse(course2);
             student->addCourse(course3);
@@ -638,8 +640,7 @@ int main() {
            student->deleteCourse(2);
     
            // Display the student's courses again
-           student->displayCourses();
-           }
+           student->displayCourses();}
         }
     if(m==3){
         int p;
@@ -651,25 +652,25 @@ int main() {
         cout<<"CHOOSE ONE FROM ABOVE"<<endl;
         cin>>p;
 
-        Student2 student2("PRIYA", 102);
+       Student2 student2("PRIYA", 102);
         //exam records
-        ExamRecord examRecord1("analog electronics",70, 80, 90);
-        ExamRecord examRecord2("intelligent systems",80, 85, 95);
-        if(p==2){
-            student2.addExamRecord(examRecord1);
-            student2.addExamRecord(examRecord2);}
-        if(p==1){
-            student2.addExamRecord(examRecord1);
-            student2.addExamRecord(examRecord2);
-            student2.displayExamRecords();}
-        if(p==3){
-         student2.addExamRecord(examRecord1);
-         student2.addExamRecord(examRecord2);
-         ExamRecord examRecord3("analog electronincs",90, 95, 100);
-         student2.updateExamRecord(2, examRecord3);}
-        if(p==4){
+       ExamRecord examRecord1("analog electronics",70, 80, 90);
+       ExamRecord examRecord2("intelligent systems",80, 85, 95);
+       if(p==2){
+       student2.addExamRecord(examRecord1);
+       student2.addExamRecord(examRecord2);}
+       if(p==1){
         student2.addExamRecord(examRecord1);
-        student2.addExamRecord(examRecord2);
+       student2.addExamRecord(examRecord2);
+        student2.displayExamRecords();}
+       if(p==3){
+        student2.addExamRecord(examRecord1);
+       student2.addExamRecord(examRecord2);
+        ExamRecord examRecord3("analog electronincs",90, 95, 100);
+        student2.updateExamRecord(2, examRecord3);}
+       if(p==4){
+        student2.addExamRecord(examRecord1);
+       student2.addExamRecord(examRecord2);
         student2.deleteExamRecord(1);
     
         student2.displayExamRecords();}
@@ -706,18 +707,18 @@ int main() {
         cout << "Enter enrollment number: ";
         cin >> enrollmentNumber;
         Student3 student3;
-        student3.setDetails("John", enrollmentNumber);
+        student3.setDetails("ANAMIKA", enrollmentNumber);
          student3.calculate();
          }
     if(m==7){
         //display individual student's result
-        Student4 student4("ANAMIKA", 103);
+        Student4 student4("ANAMIKA", 1);
         student4.addExam(Exam("ANALOG ELECTRONICS", 75, 100));
         student4.addExam(Exam("PROGRAMMING IN C", 80, 100));
         student4.addExam(Exam("COMMUNICATION SKILLS", 90, 100));
         student4.displayResult();
     
-        Student4 student5("MAHITA", 101);
+        Student4 student5("MAHITA", 2);
         student5.addExam(Exam("ANALOG ELECTRONICS", 85, 100));
         student5.addExam(Exam("PROGRAMMING IN C", 70, 100));
         student5.addExam(Exam("COMMUNICATION SKILLS", 80, 100));
@@ -725,19 +726,19 @@ int main() {
     if(m==8){
         //course wise result
        // Create exam objects
-       Exam2 is("INTELLIGENT SYSTEMS", 90);
-    Exam2 de("DIGiTAL ELECTRONICS", 85);
+       Exam2 is("INTELLIIGENT SYSTEMS", 90);
+    Exam2 de("DIGITAL ELECTRONICS", 85);
     Exam2 ae("ANALOG ELECTRONICS", 92);
     Exam2 am("APPLIED MATHEMATICS", 88);
 
     // Create student objects
     vector<Exam2> exams1 = {is, de, ae, am};
-    Student7 st1("MAHITA BOYINA", 100, exams1);
+    Student7 st1("MAHITA BOYINA", 101, exams1);
 
     vector<Exam2> exams2 = {de, ae};
     Student7 st2("PRIYA PAHWA", 102, exams2);
 
-    vector<Exam2> exams3 = {is,ae, am};
+    vector<Exam2> exams3 = {is, de, am};
     Student7 st3("ANAMIKA KUMARI", 103, exams3);
 
     // Create course object
@@ -749,22 +750,21 @@ int main() {
     if(m==9){
     // overall result
     // Create an exam object
-    Exam3 exam3;
+    Exam3 exam;
 
     // Add some students to the exam
-    exam3.addStudent({"ANAMIKA", 103, 80});
-    exam3.addStudent({"PRIYA", 102, 90});
-    exam3.addStudent({"MAHITA", 100, 70});
+    exam.addStudent({"ANAMIKA", 103, 80});
+    exam.addStudent({"MAHITA", 100, 90});
+    exam.addStudent({"PRIYA", 102, 70});
 
     // Display the overall result
-    exam3.displayResult();}
+    exam.displayResult();}
     if(m==10){
         break;
     }
     cout<<"do you want to continue(y/n)";
     cin>>choice;
-}
-
+    }
     return 0;
 }
     

@@ -1,0 +1,5 @@
+{
+    "files.autoSave": "onFocusChange",
+    "git.fetchOnPull": true,
+    "git.allowForcePush": true
+}
